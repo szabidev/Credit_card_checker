@@ -1,58 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./src/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/style.css" />
     <title>Credit Card Checker</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="card-container">
-        <div class="credit-card-container">
-            <div class="navigation">
-                <i class="fas fa-arrow-left"></i>
-                <h4 class="checkout">Checkout</h4>
-                <i class="fas fa-ellipsis-h"></i>
-            </div>
-
-            <div class="credit-card">
-                    <!-- visa svg -->
-                    <?xml version="1.0" ?><svg class="visa-icon" enable-background="new -822 823.1 56.7 56.7" height="56.7px" id="Layer_1" version="1.1" viewBox="-822 823.1 56.7 56.7" width="56.7px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><polygon points="-797.8,845.3 -801.1,860.5 -797.1,860.5 -793.9,845.3  "/><path d="M-803.6,845.3l-4.1,10.3l-1.7-8.8c-0.2-1-1-1.5-1.8-1.5h-6.7l-0.1,0.4c1.4,0.3,2.9,0.8,3.9,1.3c0.6,0.3,0.7,0.6,0.9,1.3   l3.1,12.1h4.2l6.4-15.2H-803.6z"/><path d="M-772.5,845.3h-3.4c-0.8,0-1.4,0.4-1.7,1.1l-5.9,14.1h4.1l0.8-2.3h5l0.5,2.3h3.6L-772.5,845.3z M-777.3,855.1l2.1-5.7   l1.2,5.7H-777.3z"/><path d="M-788.7,849.5c0-0.5,0.5-1.1,1.7-1.3c0.6-0.1,2.1-0.1,3.9,0.7l0.7-3.2c-0.9-0.3-2.2-0.7-3.7-0.7c-3.9,0-6.6,2.1-6.6,5   c0,2.2,2,3.4,3.4,4.1c1.5,0.7,2,1.2,2,1.9c0,1-1.2,1.5-2.4,1.5c-2,0-3.1-0.5-4-1l-0.7,3.3c0.9,0.4,2.6,0.8,4.4,0.8   c4.1,0,6.8-2,6.8-5.2C-783.2,851.6-788.8,851.3-788.7,849.5z"/></g></svg>
-
-                    <p class="world-text">world</p>
-
-                    <p class="card-number-text">Card number</p>
-
-                    <div class="card-number">
-                        <p>1234</p>
-                        <p>5678</p>
-                        <p>9101</p>
-                        <p>1121</p>
-                    </div>
-                    <div class="expiration">
-                        <p class="expiration-text">Expiration</p>
-                        <p class="expiration-date">01/01/2024</p>
-                    </div>
-                    <div class="cvc">
-                        <p class="cvc-text">CVC</p>
-                        <p class="cvc-number">123</p>
-                    </div>
-            </div>
-            <div class="navigation">
-                <h4 class="checkout">Purchase</h4>
-                <i class="fas fa-ellipsis-h"></i>
-            </div>
+      <div class="credit-card-container">
+        <div class="navigation">
+          <i class="fas fa-arrow-left"></i>
+          <h4 class="checkout">Checkout</h4>
+          <i class="fas fa-ellipsis-h"></i>
         </div>
-        <div class="product-card">
-            <img class="shoe-image" src="./src/image/shoes-cut.png" alt="Nike shoes">
+
+        <div class="credit-card">
+          <!-- visa svg -->
+          <?xml version="1.0" ?><svg
+            class="visa-icon"
+            enable-background="new -822 823.1 56.7 56.7"
+            height="56.7px"
+            id="Layer_1"
+            version="1.1"
+            viewBox="-822 823.1 56.7 56.7"
+            width="56.7px"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <g>
+              <polygon
+                points="-797.8,845.3 -801.1,860.5 -797.1,860.5 -793.9,845.3  "
+              />
+              <path
+                d="M-803.6,845.3l-4.1,10.3l-1.7-8.8c-0.2-1-1-1.5-1.8-1.5h-6.7l-0.1,0.4c1.4,0.3,2.9,0.8,3.9,1.3c0.6,0.3,0.7,0.6,0.9,1.3   l3.1,12.1h4.2l6.4-15.2H-803.6z"
+              />
+              <path
+                d="M-772.5,845.3h-3.4c-0.8,0-1.4,0.4-1.7,1.1l-5.9,14.1h4.1l0.8-2.3h5l0.5,2.3h3.6L-772.5,845.3z M-777.3,855.1l2.1-5.7   l1.2,5.7H-777.3z"
+              />
+              <path
+                d="M-788.7,849.5c0-0.5,0.5-1.1,1.7-1.3c0.6-0.1,2.1-0.1,3.9,0.7l0.7-3.2c-0.9-0.3-2.2-0.7-3.7-0.7c-3.9,0-6.6,2.1-6.6,5   c0,2.2,2,3.4,3.4,4.1c1.5,0.7,2,1.2,2,1.9c0,1-1.2,1.5-2.4,1.5c-2,0-3.1-0.5-4-1l-0.7,3.3c0.9,0.4,2.6,0.8,4.4,0.8   c4.1,0,6.8-2,6.8-5.2C-783.2,851.6-788.8,851.3-788.7,849.5z"
+              />
+            </g>
+          </svg>
+
+          <p class="world-text">world</p>
+
+          <p class="card-number-text">Card number</p>
+
+          <div class="card-number">
+            <p>1234</p>
+            <p>5678</p>
+            <p>9101</p>
+            <p>1121</p>
+          </div>
+          <div class="expiration">
+            <p class="expiration-text">Expiration</p>
+            <p class="expiration-date">01/01/2024</p>
+          </div>
+          <div class="cvc">
+            <p class="cvc-text">CVC</p>
+            <p class="cvc-number">123</p>
+          </div>
         </div>
+        <div class="navigation">
+          <h4 class="checkout">Purchase</h4>
+          <i class="fas fa-ellipsis-h"></i>
+        </div>
+      </div>
+      <div class="product-card">
+        <img class="shoe-image" src="./src/image/shoes.png" alt="Nike shoes" />
+        <div class="product-container">
+          <div class="product-info">
+            <p class="product-description">Men's Shoe</p>
+            <h3 class="product-brand">Nike Shoe</h3>
+            <p class="product-price">$ 320.99</p>
+          </div>
+          <div class="product-arrow">
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
     </div>
-
-    
-</body>
+  </body>
 </html>

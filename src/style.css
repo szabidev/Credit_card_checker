@@ -1,147 +1,206 @@
 :root {
-    --black : #101112;
-    --white-text: #ffffff;
-    --gray-text: #a0a7ba;
-    --dark-red: #d40c3d;
-    --light-red: #ff602c;
-    --card-text:#950d21;
-    --main-font: 'Roboto', sans-serif;
-    --credit-card-font: 'Inconsolata', monospace;
-
+  --black: #101112;
+  --white-text: #ffffff;
+  --gray-text: #a0a7ba;
+  --dark-red: #d40c3d;
+  --light-red: #ff602c;
+  --card-text: #950d21;
+  --main-font: "Roboto", sans-serif;
+  --credit-card-font: "Inconsolata", monospace;
 }
-
 
 /* base */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-family: var(--main-font);
-    font-size: 62.5%;
+  font-family: var(--main-font);
+  font-size: 62.5%;
 }
 
 .card-container {
-    width: 30%;
-    background-color: var(--black);
-    margin: 5% auto;
-    padding-top: 5rem;
+  width: 30%;
+  background-color: var(--black);
+  margin: 5% auto;
+  padding-top: 5rem;
+  height: 85rem;
 }
 
 .credit-card-container {
-    width: 90%;
-    margin: 0 auto;
-    
-    /* padding-bottom: 2rem; */
-    
+  width: 90%;
+  margin: 0 auto;
 }
-
 
 /* navigation */
 .credit-card-container .navigation {
-    display: flex;
-    color: var(--white-text);
-    justify-content: space-between;
-    font-size: 2rem;
-    padding: .5rem .25rem; 
+  display: flex;
+  color: var(--white-text);
+  justify-content: space-between;
+  font-size: 2rem;
+  padding: 0.5rem 0.25rem;
 }
 
 .checkout {
-    letter-spacing: 1px;
-    font-weight: 300;
+  letter-spacing: 1px;
+  font-weight: 300;
 }
 
 .fas {
-    color: var(--gray-text);
-    font-size: 1.75rem;
+  color: var(--gray-text);
+  font-size: 1.75rem;
+  cursor: pointer;
 }
 
 /* credit card */
 .credit-card {
-    position: relative;
-    margin: 5rem auto;
-    margin-bottom: 2rem;
-    width: 90%;
-    height: 198px;
-    background-image: linear-gradient(316.55deg,var(--dark-red) 0%, var(--light-red) 99.37%);
-    border-radius: 2rem;
-    font-family: var(--credit-card-font);
+  position: relative;
+  margin: 5rem auto;
+  margin-bottom: 2rem;
+  width: 90%;
+  height: 198px;
+  background-image: linear-gradient(
+    316.55deg,
+    var(--dark-red) 0%,
+    var(--light-red) 99.37%
+  );
+  border-radius: 2rem;
+  font-family: var(--credit-card-font);
 }
 
 .visa-icon {
-    fill: var(--white-text);
-    position: absolute;
-    top: 2%;
-    left: 5%;
+  fill: var(--white-text);
+  position: absolute;
+  top: 2%;
+  left: 5%;
 }
 
 .world-text {
-    font-size: 1.5rem;
-    color: var(--card-text);
-    position: absolute;
-    top: 11%;
-    right: 7%;
+  font-size: 1.5rem;
+  color: var(--card-text);
+  position: absolute;
+  top: 11%;
+  right: 7%;
 }
 
 .card-number-text {
-    font-size: 1.5rem;
-    color: var(--card-text);
-    position: absolute;
-    top: 32.5%;
-    left: 5%
+  font-size: 1.5rem;
+  color: var(--card-text);
+  position: absolute;
+  top: 32.5%;
+  left: 5%;
 }
 
 .card-number {
-    display: flex;
-    width: 100%;
-    margin: 1rem 0;
-    justify-content: space-around;
-    position: absolute;
-    top: 40%;
-    left: 5%;
+  display: flex;
+  width: 100%;
+  margin: 1rem 0;
+  justify-content: space-around;
+  position: absolute;
+  top: 40%;
+  left: 5%;
 }
 
 .card-number p {
-    width: 25%;
-    font-size: 2.5rem;
-    color: var(--white-text);
+  width: 25%;
+  font-size: 2.5rem;
+  color: var(--white-text);
 }
 
 .expiration {
-    position: absolute;
-    top: 70%;
-    left: 5%;
+  position: absolute;
+  top: 70%;
+  left: 5%;
 }
 
-.expiration-text, .cvc-text {
-    font-size: 1.25rem;
-    color: var(--card-text);
+.expiration-text,
+.cvc-text {
+  font-size: 1.25rem;
+  color: var(--card-text);
 }
 
-.expiration-date, .cvc-number {
-    font-size: 1.5rem;
-    color: var(--white-text);
-    padding-top: .5rem;
+.expiration-date,
+.cvc-number {
+  font-size: 1.5rem;
+  color: var(--white-text);
+  padding-top: 0.5rem;
 }
 
 .cvc {
-    position: absolute;
-    top: 70%;
-    right: 30%;
+  position: absolute;
+  top: 70%;
+  right: 30%;
 }
-
 
 /* product-card */
 .product-card {
-    position: relative;
-    background-color: var(--white-text);
-    margin: 2rem 0;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+  position: relative;
+  background-color: var(--white-text);
+  margin: 2rem 0;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  min-height: 40rem;
 }
 
-/* cut out the shoe from the image, and place it absolutely */
+/* remove small gap between image and div */
 .shoe-image {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: -20%;
+  left: 5%;
+}
+
+.product-container {
+  display: flex;
+  position: absolute;
+  top: 70%;
+  left: 0;
+}
+
+.product-info {
+  padding-left: 1.5rem;
+  padding-bottom: 1rem;
+  /* easy way to put arrow on the right side */
+  width: 32rem;
+}
+
+.product-description {
+  font-size: 1.55rem;
+  color: var(--gray-text);
+}
+
+.product-brand {
+  font-size: 2.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.5rem;
+}
+
+.product-price {
+  font-size: 2rem;
+}
+
+.product-arrow {
+  width: 90px;
+  height: 90px;
+  background-image: linear-gradient(
+    316.55deg,
+    var(--dark-red) 0%,
+    var(--light-red) 99.37%
+  );
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.3);
+}
+
+.fa-arrow-right {
+  font-size: 3rem;
+  color: var(--white-text);
+  display: block;
+  position: absolute;
+  top: 35%;
+  left: 35%;
 }
